@@ -1,6 +1,5 @@
 import * as enzyme from 'enzyme';
 import * as React from 'react';
-import App from './App';
 import Absences from './subcomponents/absenceData';
 import AbsenceList from './AbsenceList';
 import Enzyme, { shallow } from 'enzyme';
@@ -9,9 +8,6 @@ import toJson from "enzyme-to-json";
 
 describe("rendering components", () => {
 
-    it("renders App component header without crashing", () => {
-        const wrapper = shallow( < App / > );        
-    });
     it("renders absence component without crashing", () => {
         const wrapper = shallow( < Absences/> );
     });
@@ -21,8 +17,8 @@ describe("rendering components", () => {
     });
 });
 describe("snapshots", () => {
-    it("App snapshot", () => {
-        const app = shallow( < App/> );
-        expect(toJson(app)).toMatchSnapshot();
+    it(" abs    snapshot", () => {
+        const abs = shallow( < AbsenceList/> );
+        expect(toJson(abs)).toMatchSnapshot();
     });    
 });
