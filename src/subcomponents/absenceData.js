@@ -23,7 +23,7 @@ class Absences extends React.Component {
     this.setState({
         type: 'sickness',
         value:10,
-        date:'', 
+        date:null, 
         isLoading:false       
     });
 }
