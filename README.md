@@ -7,7 +7,7 @@ By combining two different json file values listed out the datas based on the di
 2)Filter by Date<br>
 3)Pagination<br>
 4)Spinner<br>
-5)Flasing messages<br><br>
+5)Flashing messages<br><br>
 
 #Technologies used#<br>
 Javascript,react,nodejs,npm,enzyme
